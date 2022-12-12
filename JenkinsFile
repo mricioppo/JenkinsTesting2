@@ -5,11 +5,7 @@ pipeline {
         booleanParam(name: 'autoApprove', defaultValue: true, description: 'Automatically run apply after generating plan?')
         string(name: 'indirizzoDB', defaultVaule: '0.0.0.0', description: 'indirizzo del database Postgres')
     }
-
-    environment {
-
-    }
-
+    
     agent  any
         options {
                 timestamps ()
